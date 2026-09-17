@@ -4,118 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lorem ">
     <title>HTML course</title>
 </head>
 
-<body style="height: 9000px;">
-    <div>test</div>
-    <span>This is span</span>
-    <div>test</div>
+<body style="height: 5000px;">
+    <a href="./index-ar.html">عربى</a>
+    <progress value="60" max="100"></progress>
+    <progress></progress>
+
+    <img src="" alt="">
+    <br>
+    <dl>
+        <dt>Title</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, facilis, suscipit exercitationem expedita
+            distinctio molestias, accusamus repudiandae dolorem itaque praesentium laboriosam minus rem quasi qui ad
+            dolor beatae ratione autem.
+        </dd>
+        <dt>Title</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, facilis, suscipit exercitationem expedita
+            distinctio molestias, accusamus repudiandae dolorem itaque praesentium laboriosam minus rem quasi qui ad
+            dolor beatae ratione autem.
+        </dd>
+    </dl>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.973504451888!2d31.345381975011012!3d30.05956801785503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583f6e3c2bc6fd%3A0x13ffea3dd49f3010!2sKimit%20Academy!5e1!3m2!1sen!2seg!4v1789659986572!5m2!1sen!2seg"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3acWaDehEiU" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+    <iframe src="https://www.youtube.com/watch?v=3acWaDehEiU" frameborder="0"></iframe>
+
     <hr>
-    <article>This is an article</article>
-    <section>This is a section</section>
-    <nav>This is nav</nav>
-    <footer>This is footer</footer>
-    <header>This is a header</header>
-    <aside>This is a side</aside>
+    <div>Mohamed <bdi>محمد</bdi> 30 </div>
 
-    <details>
-        <summary>This is summary</summary>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rem aspernatur eius nobis commodi voluptate
-            recusandae non obcaecati sequi ipsum, hic iste doloremque nihil. Incidunt aliquam repudiandae corporis
-            exercitationem consequatur.
-            Fugit eos nobis maiores quo tempora. Qui odio eligendi consequuntur maxime quaerat placeat odit expedita
-            culpa sed? Autem odio reiciendis nemo quam, quo, modi, inventore sequi eos facilis natus vel.</p>
-    </details>
+    <meter value="60" max="100"></meter>
 
-    <figure>
-        <figcaption>Tiger</figcaption>
-        <img src="./images/tiger.webp" width="300" alt="This is a tiger">
-    </figure>
+    <audio src="./audio/114.mp3" controls></audio>
 
-    <hr>
+    <video src="./video/countdown.mp4" width="600" autoplay muted loop controls></video>
 
-    <ol>
-        <li>Hamza</li>
-        <li>Nour</li>
-    </ol>
-    <ul>
-        <li>HTML
-            <ul>
-                <li>HTML tag</li>
-                <li>head tag</li>
-                <li>body tag</li>
-            </ul>
-        </li>
-        <li>CSS</li>
-    </ul>
+    <h3>test</h3>
+    <div>
+        <h2>ssss</h2>
+    </div>
 
-    <form action="./thank.html" method="POST">
-        <label for="testEmail">Enter your email : </label>
-        <input type="email" id="testEmail" name="userEmail" placeholder="Please enter your email" required
-            autocomplete="off">
-        <br>
-        <label>Enter your password : </label>
-        <input type="password" name="userPassword" required>
-        <br>
-        <label>Enter your title : </label>
-        <input type="text" name="userTitle" value="Mohamed123" disabled>
-        <input type="text" name="story" dirname="direction">
-        <br>
-        <select name="courseName" multiple>
-            <optgroup label="Frontend courses">
-                <option value="html">HTML</option>
-                <option value="css">CSS</option>
-                <option value="js" selected>JS</option>
-            </optgroup>
-            <optgroup label="Backend courses">
-                <option value="php">PHP</option>
-                <option value="node">Node Js</option>
-            </optgroup>
-        </select>
-        <br>
-        <textarea cols="40" rows="10" maxlength="20"></textarea>
-        <br>
-        <input type="color" name="color">
-        <hr>
-        <input type="date" name="reservation" min="2026-09-05" max="2026-09-15">
-        <input type="week">
-        <input type="month">
-        <input type="time">
-        <input type="datetime-local">
-        <hr>
-        <input type="url">
-        <input type="number" min="0" max="10" step="2">
-        <input type="range">
-        <br>
-        <input type="button" value="Input button">
-        <input type="search">
-        <input type="file" multiple accept=".png">
-        <input type="hidden" name="userLang" value="en">
-        <input type="image" src="./images/tiger.webp" width="100" alt="tiger">
-        <br><br>
-
-        <hr>
-        <input type="radio" name="gender" id="male" value="male" checked>
-        <label for="male">Male</label>
-        <br>
-        <input type="radio" name="gender" id="female" value="female">
-        <label for="female">Female</label>
-
-        <hr>
-        <input type="checkbox" name="courses" id="html" value="html">
-        <label for="html">HTML</label>
-
-        <br>
-        <input type="checkbox" name="courses" id="css" value="css">
-        <label for="css">CSS</label>
-        <hr>
-        <input type="reset" value="Reset values">
-        <br>
-        <input type="submit" value="Login" formnovalidate formtarget="blank">
-        <!-- <button type="submit">OK</button> -->
-    </form>
-
+    &lt; div &copy; </div>
 </body>
 
 </html>

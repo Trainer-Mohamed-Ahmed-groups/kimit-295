@@ -1,0 +1,27 @@
+p {
+  color: blue;
+  background: #00f;
+  width: 50%;
+}
+
+.card {
+  color: yellow;
+  height: 100px;
+  width: 50%;
+  background: #0f0;
+}
+
+#userData {
+  background: red;
+  width: 60vw;
+  height: 80vh;
+}
+/*
+  kebab-case
+  snake_case
+  camelCase
+  PascalCase
+*/
+section {
+  /* color: blue !important; */
+}
