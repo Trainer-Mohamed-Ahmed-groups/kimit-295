@@ -1,27 +1,66 @@
-p {
-  color: blue;
-  background: #00f;
-  width: 50%;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* html { */
+:root {
+  --main-color: red;
+}
+body {
+  height: 5000px;
+}
+nav {
+  height: 70px;
+  background-color: #080;
+  font-weight: bold;
+}
+* {
+  font-family: "Roboto", sans-serif;
+  /* border: solid; */
 }
 
-.card {
-  color: yellow;
+.spacingExplain {
+  /* min-height: 100px;
+  max-height: 150px; */
+  height: calc(100vh - 75px);
+  width: 400px;
+  background-color: var(--main-color);
+  font-size: 8px;
+  border: solid;
+}
+.parent {
+  height: 500px;
+  width: 500px;
+  background-color: var(--main-color);
+  font-size: 3rem;
+}
+.child {
+  background-color: blue;
+  height: 50%;
+  width: 50%;
+  font-size: 2rem;
+}
+.grand {
+  background-color: green;
+  height: 50%;
+  width: 50%;
+  font-size: 1.5rem;
+}
+
+.testOne,
+.testTwo {
   height: 100px;
-  width: 50%;
-  background: #0f0;
+  width: 100px;
 }
-
-#userData {
-  background: red;
-  width: 60vw;
-  height: 80vh;
+.testOne {
+  background-color: #00f;
 }
-/*
-  kebab-case
-  snake_case
-  camelCase
-  PascalCase
-*/
-section {
-  /* color: blue !important; */
+.testTwo {
+  background-color: green;
+}
+.bgImageExplain {
+  background-image: url("../images/tiger2.jpg");
+  height: 400px;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  /* background-attachment: fixed */
+  background-position: center left;
 }
