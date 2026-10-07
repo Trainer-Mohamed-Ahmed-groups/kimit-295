@@ -7,105 +7,124 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
+
     <style>
-        body {
-            height: 8000px;
+        html {
+            scroll-behavior: smooth;
         }
 
-        * {
-            box-sizing: border-box;
+        input:focus {
+            background-color: yellow;
         }
 
-        .linear_explain {
-            height: 400px;
-            width: 400px;
-            /* background-image: linear-gradient(red 50%, green 70%, blue); */
-            /* background-image: linear-gradient(red, green, blue, red, green, blue); */
-            /* background-image: radial-gradient(red, green); */
-            /* background-image: repeating-linear-gradient(blue, red 200px); */
-            /* background-image: repeating-radial-gradient(blue, red 50%); */
-            /* background-image: conic-gradient(blue, red 50%); */
-            background: url(./images/tiger.jpg) no-repeat fixed center center/ cover;
+        section {
+            height: 2000px;
         }
 
-        .border_explain {
-            height: 150px;
-            width: 150px;
-            border-top: 20px red solid;
-            border-right: 5px blue dotted;
-            border-bottom: 10px blue dashed;
-            border-left: 15px blue groove;
-        }
-
-        .radius_explain {
-            height: 200px;
-            width: 200px;
-            background-color: #888;
-            /* border-top-left-radius: 30px;
-            border-top-right-radius: 30px;
-            border-bottom-right-radius: 30px;
-            border-bottom-left-radius: 30px; */
-            /* border-radius: 30px; */
-            border-start-end-radius: 50px;
-        }
-
-        .spacing_explain {
-            height: 300px;
-            width: 300px;
-            background-color: #888;
-            /* margin-left: 128px; */
-            /* margin-top: 47px; */
-            /* margin: 50px 100px 20px;*/
-            /* margin-inline-start: 150px; */
-            padding: 50px;
-            border: 10px solid;
-        }
-
-        section>div {
-            font-weight: bold;
+        p::selection {
             color: red;
-            font-size: 2rem;
+            background-color: #080;
         }
 
-        /* section nav .custom+div { */
-        section nav .custom~div {
-            background-color: green;
+        /* p::first-letter { */
+        p::first-line {
+            font-size: 3rem;
+            color: #F00;
+        }
+
+        .first::after {
+            content: "Hello";
+            font-weight: bold;
+            font-size: 2rem;
+            color: red;
+            background-color: bisque;
+        }
+
+        .display_explain {
+            height: 250px;
+            width: 250px;
+            background-color: chocolate;
+            /* display: none; */
+            /* visibility: hidden; */
+            /* opacity: .4; */
+        }
+
+        span {
+            height: 250px;
+            width: 250px;
+            margin: 20px;
+            color: blue;
+            font-weight: bold;
+            background-color: #999;
+            display: inline-block;
+        }
+
+
+        ul li {
+            background-color: antiquewhite;
+            list-style-position: inside;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #000;
+            border-collapse: collapse;
+            caption-side: bottom;
+        }
+
+        caption {
+            margin-top: 20px;
+            margin-inline-start: 10px;
         }
     </style>
 </head>
 
 <body>
+    <label for="name">Name: </label><br>
+    <input id="name" name="name" type="text" autofocus /><br>
 
-    <div class="linear_explain"></div>
-    <div class="border_explain">This is for border</div>
-    <hr>
+    <div class="display_explain">dddd</div>
 
-    <div class="radius_explain"></div>
+    <table>
+        <caption>Employees</caption>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Aliiiiiiiiiiiiiii</td>
+            <td>18</td>
+        </tr>
+    </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos vero facere rerum cumque eligendi provident
+        doloremque sit fugiat praesentium dolore commodi neque dignissimos amet modi, excepturi distinctio enim iure
+        incidunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus libero distinctio quia, minima
+        ab mollitia dolor, dicta aliquid nam debitis nemo eius laborum vel totam assumenda amet necessitatibus tempora
+        corporis!
+        <span>This is test</span>
+        Rerum ea laborum deserunt magnam autem hic quod est nam quaerat earum, repudiandae illo pariatur expedita dolor
+        voluptas ratione corrupti, odio veritatis iure. Nobis similique optio tenetur aut! Nulla, unde?
+        Expedita, eos dolor iste assumenda facilis ducimus sapiente adipisci facere autem. Officia omnis quam suscipit,
+        consequuntur impedit rem similique non ipsa laudantium obcaecati doloribus, nisi sit sint at ipsum ipsam.
+        Nesciunt tempora officia ad dolor, maxime excepturi minus culpa ut magni nulla, laboriosam ipsa nam praesentium
+        ipsum autem voluptatibus recusandae. Consequuntur, obcaecati inventore alias doloribus suscipit eum iste ducimus
+        adipisci?
+        Et quaerat tempora officia facere odit aperiam iusto dolor quas, unde id dignissimos? Sit totam impedit itaque
+        pariatur doloremque error nobis, ipsam sunt! Harum vero earum facere illum repudiandae. Explicabo!
+    </p>
+    <div class="first">This is for after</div>
+    <div class="first">This is for after</div>
 
+    <nav>
+        <ul>
+            <li><a href="#first">first</a></li>
+            <li><a href="#second">second</a></li>
+        </ul>
+    </nav>
 
-    <p class="spacing_explain">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nulla debitis
-        accusantium odio recusandae consectetur aperiam amet, veniam suscipit sit eveniet laudantium commodi, dolorum
-        corrupti nihil ab culpa porro aspernatur?</p>
-
-    <section>
-        <nav>
-            <div>1</div>
-            <div class="custom">2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-        </nav>
-        <footer>
-            <div>7</div>
-            <div>8</div>
-            <div>9</div>
-            <div>10</div>
-            <div>11</div>
-            <div>12</div>
-        </footer>
-        <div>13</div>
-    </section>
+    <section id="first">This is a section</section>
+    <section id="second">This is a section</section>
 </body>
 
 </html>
