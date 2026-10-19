@@ -7,174 +7,73 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
-
-    <style>
-        body {
-            height: 5000px;
-        }
-
-        p {
-            text-shadow: 10px 10px 10px red;
-        }
-
-        .box {
-            height: 100px;
-            width: 100px;
-            margin: 30px;
-            background-color: aqua;
-        }
-
-        .box:hover {
-            box-shadow: 3px 14px 8px 7px red;
-        }
-
-        .hovered_box {
-            height: 200px;
-            width: 200px;
-            background-color: brown;
-            /* transition: 2s; */
-            /* transition-duration: 5s;
-            transition-property: all; */
-            /* transition-delay: 1s; */
-            /* transition-timing-function: linear; */
-            /* transition-behavior: ; */
-        }
-
-        /* .hovered_box:hover {
-            width: 350px;
-            height: 350px;
-            background-color: beige;
-            } */
-
-        .loading {
-            height: 100px;
-            width: 100px;
-            margin: auto;
-            border: 15px solid #989898;
-            border-radius: 50%;
-            border-top-color: transparent;
-            animation: loading .5s infinite linear;
-        }
-
-        /* .loading:hover {
-            transform: rotate(360deg);
-            transition: .5s all ease-in-out;
-        } */
-
-        [popover]:popover-open {
-            opacity: 1;
-            transform: scaleX(1);
-        }
-
-        [popover] {
-            /* Final state of the exit animation */
-            opacity: 0;
-            transform: scaleX(0);
-
-            transition-property: opacity, transform, overlay, display;
-            transition-duration: 0.7s;
-            transition-behavior: allow-discrete;
-        }
-
-        @starting-style {
-            [popover]:popover-open {
-                opacity: 0;
-                transform: scaleX(0);
-            }
-        }
-
-        .animation_example {
-            height: 100px;
-            width: 100px;
-            background-color: aquamarine;
-            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-            animation: myFirstAnimation 3s ease-in-out 3 forwards;
-        }
-
-        .flex {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 400px;
-            /* flex-wrap: wrap; */
-            background-color: aqua;
-            align-content: space-evenly;
-        }
-
-        .child {
-            /* height: 70px; */
-            /* width: 25%; */
-            background-color: blueviolet;
-            text-align: center;
-            font-size: 2rem;
-            font-weight: bold;
-            color: #FFF;
-            border: 1px solid #000;
-            line-height: 70px;
-            flex: 1;
-        }
-
-        .child:nth-child(2) {
-            align-self: flex-end;
-            flex-grow: 1;
-            flex-shrink: 2;
-            flex-basis: 199px;
-            flex: 1;
-        }
-
-        @keyframes myFirstAnimation {
-
-            0%,
-            100% {
-                height: 500px;
-                width: 500px;
-            }
-
-            50% {
-                width: 200px;
-                height: 200px;
-            }
-
-            75% {
-                width: 200px;
-                height: 200px;
-                background-color: black;
-            }
-        }
-
-        @keyframes loading {
-            0% {
-                transform: rotateY(0);
-            }
-
-            100% {
-                transform: rotateZ(360deg);
-            }
-        }
-    </style>
 </head>
 
 <body>
-    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam enim blanditiis corrupti debitis eaque
-        voluptatibus similique? Nobis consequuntur, perspiciatis, nisi sed tempora nam corporis dolores impedit ab,
-        voluptatibus fugiat asperiores?</p>
-
-    <div class="box"></div>
-
-    <div class="hovered_box"></div>
-    <div class="loading"></div>
-
-    <button popovertarget="mypopover">Show the popover</button>
-    <div popover="auto" id="mypopover">I'm a Popover! I should animate.</div>
-
-    <div class="animation_example"></div> -->
-
-    <div class="flex">
-        <div class="child">1</div>
-        <div class="child">2</div>
-        <div class="child">3</div>
-        <div class="child">4</div>
+    <div class="card">
+        <h1>Registration</h1>
+        <h2>Personal Details</h2>
+        <div class="flex">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <h2>Personal Details</h2>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+        </div>
     </div>
+
+    <button onclick="console.log('OK')">Click me</button>
+
+    <script>
+        console.log("Hello from internal")
+        console.log(8 * 16)
+    </script>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
