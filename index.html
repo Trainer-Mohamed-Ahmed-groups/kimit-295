@@ -4,12 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <button onclick="showName()">Click me</button>
-    <script src="./js/main.js"></script>
+    <!-- Start Header -->
+    <header>
+        <div class="container flex justify_between">
+            <div class="contacts flex">
+                <div class="mail flex">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>[EMAIL_ADDRESS]</span>
+                </div>
+                <div class="phone flex">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+20 100 200 300 4</span>
+                </div>
+            </div>
+            <div class="social_media">
+                <a href="">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- End Header -->
+
+    <nav>
+        <div class="container flex justify_between items_center">
+            <img src="./images/apple-icon.png" width="80" alt="Apple Logo">
+            <ul class="links flex">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">courses</a></li>
+                <li><a href="#">event</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            <div class="icons flex">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="" class="relative">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    <span>0</span>
+                </a>
+                <a href="" class="relative">
+                    <i class="fa-solid fa-user"></i>
+                    <span>+99</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container flex justify_between items_center">
+            <div>
+                <h1>test test </h1>
+                <h2>test test </h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione quidem unde voluptatem excepturi
+                    consequatur incidunt et aliquam animi expedita? Impedit, voluptatem! Quos pariatur aliquid nisi ab,
+                    fugiat quidem quis voluptate.</p>
+            </div>
+            <img src="./images/banner_img_03.jpg" alt="Hero image">
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <h2 class="section_title">categories of month</h2>
+            <p class="section_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolore nihil quasi
+                optio, necessitatibus
+                voluptatem fugit itaque rerum atque velit fuga iusto illum dolor unde, nostrum ex assumenda eius vel?
+            </p>
+            <div class="flex">
+                <div class="card">
+                    <img src="./images/category_img_01.jpg" alt="Item 1">
+                    <h5>name</h5>
+                    <button>go shop</button>
+                </div>
+                <div class="card">
+                    <img src="./images/category_img_02.jpg" alt="Item 1">
+                    <h5>name</h5>
+                    <button>go shop</button>
+                </div>
+                <div class="card">
+                    <img src="./images/category_img_03.jpg" alt="Item 1">
+                    <h5>name</h5>
+                    <button>go shop</button>
+                    <!-- <div class="flex justify_between">
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>320$</div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
