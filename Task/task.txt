@@ -1,0 +1,8 @@
+/* ******************* Create a loop get capital letters  *******************************/
+/* ******************* Create a loop get capital and small letters in one loop  *******************************/
+/* *******************  Search for text "bad" *******************************/
+/* *******************  Search for text "bad" *******************************/
+/* ******************* Get number of repetition of word *******************************/
+/* ******************* Remove & from this "Hello&JS&Again&after&css&course"; *******************************/
+/******************** print all capital letters and small letters with on loop **********************************/
+/******* Create a function that get a sentence and give you number of words that starts with capital letter  *********/

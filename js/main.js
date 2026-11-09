@@ -1,55 +1,64 @@
 "use strict";
-console.log(8 % 3);
+var x = 1
 
-console.log({} && [] && function () {} && 0);
 
-// AND return first false and last true
-// OR  return first true and last false
+// debugger
+while (x <= 10) {
+  // if (x == 4) { continue; }
+  console.log(x)
+  x++
+}
+console.log("*******************")
+console.log(x)
+console.log("********DO WHILE ***********")
 
-console.log(5 * 8);
-console.log(8 / 0);
-console.log(-8 / 0);
-console.log(8 * "A");
-console.log(typeof (8 * "A"));
 
-try {
-  console.log(first);
-} catch (error) {
-  console.warn(error.message);
-} finally {
-  console.log("I am finally");
+var y = 1;
+
+do {
+  console.log(y)
+  y++
+} while (y <= 10);
+
+console.log("*************** FOR *****************")
+
+
+for (var i = 1; i <= 10; i++) {
+  console.log(i)
 }
 
-var dayNum = 1;
+var employees = ["John", "Doe", "Jane", "Doe"]
 
-switch (dayNum) {
-  case 1:
-    console.log("Saturday");
-    break;
-  case 2:
-  case 3:
-    console.log("Sunday OR Monday");
-    break;
-  default:
-    console.log("Not valid number");
+for (let index = 0; index < employees.length; index++) {
+  const element = employees[index];
+  console.log(element)
 }
 
-console.log(isNaN(4));
 
-function getRectArea(x, y) {
-  if (isNaN(x) || isNaN(y)) {
-    throw "Error input";
-  } else {
-    console.log(x * y);
-  }
+console.log(5 ** 3)
+
+
+console.log("*".repeat(20))
+
+var myVariable = 50;
+console.log(myVariable)
+
+
+var myVariable = 100
+console.log(myVariable)
+
+
+
+var testFn = function () {
+  console.log("first")
 }
 
-try {
-  getRectArea(5, "E");
-} catch (e) {
-  console.error(e);
-}
+testFn()
 
-p = 6;
 
-console.log(p);
+console.log(5 * "5")
+console.log(5 + "5")
+
+
+console.log(parseInt("66.9"))
+console.log(parseFloat("66.9"))
